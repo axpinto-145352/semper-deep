@@ -3,34 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semper Deep</title>
+    <title>Semper Deep - Veteran Vectors Investment Platform</title>
+    <meta name="description" content="Empowering veterans through strategic investments in defense technology, venture capital, and real estate. Join the Semper Deep community.">
     <link rel="stylesheet" href="styles.css">
+    <!-- ActiveCampaign Tracking -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', 'YOUR_ACCOUNT_ID');
+        vgo('setTrackByDefault', true);
+        vgo('process');
+    </script>
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background"></div>
+
     <header>
         <img src="assets/v-logo.png" alt="Semper Deep Logo" class="logo">
         <nav>
-            <!-- Navigation items here -->
+            <a href="index.html">Home</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="faq.html">FAQ</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <button class="mobile-nav-toggle" style="display: none;">☰</button>
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="hero-image">
+            <div class="hero-content">
+                <h1 class="hero-title">Semper Deep</h1>
+                <p class="hero-subtitle">Empowering veterans through strategic investments in defense technology, venture capital, and real estate opportunities.</p>
+                <button class="btn-primary" onclick="document.querySelector('.schedule-drawer').classList.add('open')">Get Started</button>
+            </div>
         </section>
         
         <section class="services">
-            <div class="service-card">
+            <div class="service-card reveal reveal-delay-1">
                 <img src="assets/vc-dashboard.jpg" alt="Analytics Dashboard" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Investment Analytics</h3>
+                    <p class="service-description">Advanced dashboard and analytics tools to track your portfolio performance and make informed investment decisions.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <img src="assets/real-estate.jpg" alt="Real Estate Investment" class="service-image">
+            <div class="service-card reveal reveal-delay-2">
+                <img src="assets/realestate.jpg.png" alt="Real Estate Investment" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Real Estate Opportunities</h3>
+                    <p class="service-description">Exclusive access to vetted real estate investments with strong potential for long-term growth and passive income.</p>
+                </div>
             </div>
         </section>
     </main>
     
+    <!-- Floating Schedule Button -->
+    <div class="schedule-float">
+        <button class="schedule-btn">Schedule Consultation</button>
+    </div>
+
+    <!-- Schedule Drawer -->
+    <div class="schedule-drawer">
+        <div class="drawer-header">
+            <h3>Schedule Your Consultation</h3>
+            <button class="drawer-close">×</button>
+        </div>
+        <div class="drawer-content">
+            <p>Ready to explore investment opportunities? Schedule a consultation with our veteran investment specialists.</p>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="interest">Investment Interest</label>
+                    <select id="interest" name="interest" class="form-input">
+                        <option value="">Select your primary interest</option>
+                        <option value="defense-tech">Defense Technology</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="venture-capital">Venture Capital</option>
+                        <option value="portfolio-review">Portfolio Review</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Schedule Consultation</button>
+            </form>
+        </div>
+    </div>
+    
     <footer>
-        <!-- Footer content here -->
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Semper Deep. Empowering veteran investors.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,35 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semper Deep Newsletter</title>
+    <title>Newsletter - Semper Deep | Veteran Investment Insights</title>
+    <meta name="description" content="Subscribe to Semper Deep's newsletter for exclusive veteran investment insights, market analysis, and opportunities in defense tech and real estate.">
     <link rel="stylesheet" href="styles.css">
+    <!-- ActiveCampaign Tracking -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', 'YOUR_ACCOUNT_ID');
+        vgo('setTrackByDefault', true);
+        vgo('process');
+    </script>
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background"></div>
+
     <header>
         <img src="assets/v-logo.png" alt="Semper Deep Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="faq.html">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="mobile-nav-toggle" style="display: none;">☰</button>
     </header>
     
     <main class="newsletter">
-        <section class="featured">
+        <div class="newsletter-hero reveal">
+            <h1 class="newsletter-title">Veteran Investment Newsletter</h1>
+            <p class="newsletter-subtitle">
+                Get exclusive insights, market analysis, and investment opportunities delivered to your inbox. 
+                Join thousands of veteran investors making informed financial decisions.
+            </p>
+        </div>
+
+        <!-- Newsletter Signup Form -->
+        <div class="newsletter-form reveal reveal-delay-1">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-color);">Subscribe to Our Newsletter</h3>
+            <!-- ActiveCampaign Form Embed -->
+            <form action="https://your-account.activehosted.com/proc.php" method="post" id="newsletter-form">
+                <div style="display: none;">
+                    <input type="hidden" name="u" value="YOUR_FORM_ID">
+                    <input type="hidden" name="f" value="YOUR_FORM_ID">
+                    <input type="hidden" name="s" value="">
+                    <input type="hidden" name="c" value="0">
+                    <input type="hidden" name="m" value="0">
+                    <input type="hidden" name="act" value="sub">
+                    <input type="hidden" name="v" value="2">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="newsletter-name">Full Name</label>
+                    <input type="text" id="newsletter-name" name="fullname" class="form-input" placeholder="Your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="newsletter-email">Email Address</label>
+                    <input type="email" id="newsletter-email" name="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="newsletter-interests">Investment Interests (Optional)</label>
+                    <select id="newsletter-interests" name="field[INTEREST]" class="form-input">
+                        <option value="">Select your primary interest</option>
+                        <option value="defense-tech">Defense Technology</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="venture-capital">Venture Capital</option>
+                        <option value="general-investing">General Investing</option>
+                        <option value="financial-planning">Financial Planning</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                        <input type="checkbox" name="field[VETERAN]" value="yes" style="accent-color: var(--accent);">
+                        I am a veteran or military family member
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-primary">Subscribe to Newsletter</button>
+                
+                <p style="font-size: 0.8rem; color: var(--text-secondary); text-align: center; margin-top: 1rem;">
+                    We respect your privacy. Unsubscribe at any time.
+                </p>
+            </form>
+        </div>
+
+        <!-- Newsletter Benefits -->
+        <div class="benefits-grid">
+            <div class="benefit-card reveal reveal-delay-2">
+                <div class="benefit-icon">📊</div>
+                <h3 class="benefit-title">Market Analysis</h3>
+                <p class="benefit-description">Weekly market insights and trends specific to defense technology, real estate, and veteran-focused investment opportunities.</p>
+            </div>
+            
+            <div class="benefit-card reveal reveal-delay-3">
+                <div class="benefit-icon">🎯</div>
+                <h3 class="benefit-title">Exclusive Opportunities</h3>
+                <p class="benefit-description">Early access to vetted investment opportunities and deals not available to the general public.</p>
+            </div>
+            
+            <div class="benefit-card reveal reveal-delay-4">
+                <div class="benefit-icon">🎓</div>
+                <h3 class="benefit-title">Educational Content</h3>
+                <p class="benefit-description">Learn investment strategies, financial planning tips, and wealth-building techniques designed for military families.</p>
+            </div>
+        </div>
+
+        <!-- Featured Content -->
+        <section class="featured reveal">
             <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="featured-image">
-            <h2>Latest in Defense Tech</h2>
-            <!-- Newsletter content here -->
+            <h2 class="featured-title">Latest in Defense Tech</h2>
+            <div class="featured-description">
+                <p>The defense technology sector continues to evolve rapidly with emerging threats and technological advances. Our latest analysis covers:</p>
+                <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Cybersecurity investments showing 40% growth year-over-year</li>
+                    <li>Autonomous systems and AI integration in military applications</li>
+                    <li>Space technology and satellite communications opportunities</li>
+                    <li>Emerging defense contractors with strong veteran leadership</li>
+                </ul>
+                <p>Subscribe to our newsletter to receive the full quarterly defense tech investment report and exclusive insights from our veteran investment team.</p>
+            </div>
         </section>
         
         <section class="highlights">
-            <div class="highlight-item">
+            <div class="highlight-item reveal reveal-delay-1">
                 <img src="assets/vc-dashboard.jpg" alt="Investment Analytics" class="highlight-image">
-                <!-- VC Dashboard highlight content -->
+                <div class="highlight-content">
+                    <h3 class="highlight-title">Portfolio Performance Dashboard</h3>
+                    <p class="highlight-description">Access our advanced analytics platform that provides real-time portfolio tracking, risk assessment, and performance metrics tailored for veteran investors.</p>
+                </div>
             </div>
-            <div class="highlight-item">
-                <img src="assets/real-estate.jpg" alt="Real Estate Investments" class="highlight-image">
-                <!-- Real Estate highlight content -->
+            
+            <div class="highlight-item reveal reveal-delay-2">
+                <img src="assets/realestate.jpg.png" alt="Real Estate Investments" class="highlight-image">
+                <div class="highlight-content">
+                    <h3 class="highlight-title">Real Estate Investment Opportunities</h3>
+                    <p class="highlight-description">Discover vetted real estate investments including residential properties, commercial developments, and REITs with strong potential for long-term growth.</p>
+                </div>
             </div>
         </section>
+
+        <!-- Newsletter Archive Teaser -->
+        <div class="card reveal mt-4" style="text-align: center; padding: 3rem 2rem;">
+            <h3 style="margin-bottom: 1rem; color: var(--text-color);">Newsletter Archive</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Browse our archive of previous newsletters, market reports, and investment insights. 
+                Subscribers get full access to our comprehensive research library.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <span style="background: var(--card-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--text-secondary); font-size: 0.9rem;">Q4 2024 Defense Tech Report</span>
+                <span style="background: var(--card-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--text-secondary); font-size: 0.9rem;">Real Estate Market Analysis</span>
+                <span style="background: var(--card-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--text-secondary); font-size: 0.9rem;">Veteran Entrepreneur Spotlight</span>
+            </div>
+        </div>
     </main>
     
+    <!-- Floating Schedule Button -->
+    <div class="schedule-float">
+        <button class="schedule-btn">Schedule Consultation</button>
+    </div>
+
+    <!-- Schedule Drawer -->
+    <div class="schedule-drawer">
+        <div class="drawer-header">
+            <h3>Schedule Your Consultation</h3>
+            <button class="drawer-close">×</button>
+        </div>
+        <div class="drawer-content">
+            <p>Ready to explore investment opportunities? Schedule a consultation with our veteran investment specialists.</p>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label class="form-label" for="consult-name">Full Name</label>
+                    <input type="text" id="consult-name" name="name" class="form-input" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="consult-email">Email Address</label>
+                    <input type="email" id="consult-email" name="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="consult-phone">Phone Number</label>
+                    <input type="tel" id="consult-phone" name="phone" class="form-input" placeholder="(555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="consult-interest">Investment Interest</label>
+                    <select id="consult-interest" name="interest" class="form-input">
+                        <option value="">Select your primary interest</option>
+                        <option value="defense-tech">Defense Technology</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="venture-capital">Venture Capital</option>
+                        <option value="portfolio-review">Portfolio Review</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Schedule Consultation</button>
+            </form>
+        </div>
+    </div>
+    
     <footer>
-        <!-- Footer content here -->
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Semper Deep. Empowering veteran investors.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
