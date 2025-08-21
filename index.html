@@ -3,34 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semper Deep</title>
+    <title>Semper Deep - Veteran Technology Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ActiveCampaign Tracking -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', '851000834');
+        vgo('setTrackByDefault', true);
+        vgo('process');
+    </script>
 </head>
 <body>
-    <header>
-        <img src="assets/v-logo.png" alt="Semper Deep Logo" class="logo">
-        <nav>
-            <!-- Navigation items here -->
-        </nav>
-    </header>
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neural-network" class="neural-background"></canvas>
     
-    <main>
-        <section class="hero">
-            <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="hero-image">
-        </section>
-        
-        <section class="services">
-            <div class="service-card">
-                <img src="assets/vc-dashboard.jpg" alt="Analytics Dashboard" class="service-image">
+    <!-- Floating Schedule Drawer -->
+    <div id="schedule-drawer" class="schedule-drawer">
+        <button id="schedule-toggle" class="schedule-toggle" aria-label="Toggle Schedule">
+            <span class="schedule-icon">📅</span>
+        </button>
+        <div class="schedule-content">
+            <h3>Schedule a Consultation</h3>
+            <p>Connect with our veteran-led team to discuss your technology and investment needs.</p>
+            <button class="cta-button">Book Meeting</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/v-logo.png" 
+                         alt="Semper Deep Logo" class="logo">
+                    <span class="brand-name">Semper Deep</span>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-menu">
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#sectors" class="nav-link">Sectors</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
             </div>
-            <div class="service-card">
-                <img src="assets/real-estate.jpg" alt="Real Estate Investment" class="service-image">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text reveal-fade-up">
+                        <h1 class="hero-title">
+                            Veteran-Led Technology Solutions
+                        </h1>
+                        <p class="hero-subtitle">
+                            Bridging military expertise with cutting-edge technology for defense, venture capital, and real estate sectors
+                        </p>
+                        <div class="hero-actions">
+                            <button class="cta-button primary">Explore Solutions</button>
+                            <button class="cta-button secondary">Schedule Consultation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/defense-tech.jpg" 
+                     alt="Defense Technology Solutions" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive technology solutions tailored for veteran entrepreneurs and defense contractors</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card reveal-slide-left">
+                        <div class="service-icon">
+                            <div class="icon-tech"></div>
+                        </div>
+                        <h3>Technology Consulting</h3>
+                        <p>Strategic technology guidance for defense contractors and veteran-owned businesses</p>
+                        <ul class="service-features">
+                            <li>Digital Transformation</li>
+                            <li>Security Solutions</li>
+                            <li>Cloud Migration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card reveal-slide-up">
+                        <div class="service-icon">
+                            <div class="icon-investment"></div>
+                        </div>
+                        <h3>Investment Analytics</h3>
+                        <p>Data-driven insights for venture capital and real estate investment decisions</p>
+                        <ul class="service-features">
+                            <li>Market Analysis</li>
+                            <li>Risk Assessment</li>
+                            <li>Portfolio Optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card reveal-slide-right">
+                        <div class="service-icon">
+                            <div class="icon-support"></div>
+                        </div>
+                        <h3>Veteran Support</h3>
+                        <p>Dedicated programs supporting veteran entrepreneurs in technology sectors</p>
+                        <ul class="service-features">
+                            <li>Mentorship Programs</li>
+                            <li>Network Access</li>
+                            <li>Funding Guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sectors Section -->
+        <section class="sectors" id="sectors">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <h2 class="section-title">Investment Sectors</h2>
+                    <p class="section-subtitle">Strategic investments across key sectors with veteran expertise</p>
+                </div>
+                
+                <div class="sectors-grid">
+                    <div class="sector-card reveal-scale">
+                        <div class="sector-image-container">
+                            <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/defense-tech.jpg" 
+                                 alt="Defense Technology" class="sector-image">
+                            <div class="sector-overlay">
+                                <h3>Defense Technology</h3>
+                                <p>Advanced defense solutions and military technology innovations</p>
+                                <button class="sector-cta">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sector-card reveal-scale" style="animation-delay: 0.2s;">
+                        <div class="sector-image-container">
+                            <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/VC.jpg.png" 
+                                 alt="Venture Capital" class="sector-image">
+                            <div class="sector-overlay">
+                                <h3>Venture Capital</h3>
+                                <p>Strategic investments in veteran-led technology startups</p>
+                                <button class="sector-cta">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sector-card reveal-scale" style="animation-delay: 0.4s;">
+                        <div class="sector-image-container">
+                            <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/realestate.jpg.png" 
+                                 alt="Real Estate Investment" class="sector-image">
+                            <div class="sector-overlay">
+                                <h3>Real Estate</h3>
+                                <p>Technology-driven real estate investment and development</p>
+                                <button class="sector-cta">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text reveal-fade-right">
+                        <h2>Veteran Excellence in Technology</h2>
+                        <p>
+                            Semper Deep combines decades of military leadership with cutting-edge technology expertise. 
+                            Our veteran-led team understands the unique challenges facing defense contractors, 
+                            veteran entrepreneurs, and technology-focused investment opportunities.
+                        </p>
+                        <p>
+                            We leverage our military discipline, strategic thinking, and technology innovation 
+                            to deliver solutions that drive real results for our clients and investment partners.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">0</span>
+                                <span class="stat-label">Veteran Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="25">0</span>
+                                <span class="stat-label">Years Combined Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <h2 class="section-title">Ready to Connect?</h2>
+                    <p class="section-subtitle">Let's discuss how we can support your technology and investment goals</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-form reveal-slide-left">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select Area of Interest</option>
+                                    <option value="technology">Technology Consulting</option>
+                                    <option value="investment">Investment Opportunities</option>
+                                    <option value="defense">Defense Solutions</option>
+                                    <option value="veteran">Veteran Support</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tell us about your project or goals" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info reveal-slide-right">
+                        <div class="contact-item">
+                            <h4>Direct Contact</h4>
+                            <p>Ready to start a conversation? Reach out directly to our team.</p>
+                            <a href="mailto:contact@semperdeep.com" class="contact-link">contact@semperdeep.com</a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4>Schedule a Meeting</h4>
+                            <p>Book a consultation to discuss your specific needs and opportunities.</p>
+                            <button class="cta-button secondary">Calendar Link</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    
-    <footer>
-        <!-- Footer content here -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://raw.githubusercontent.com/axpinto-145352/semper-deep/main/assets/v-logo.png" 
+                             alt="Semper Deep Logo" class="logo-small">
+                        <span class="brand-name">Semper Deep</span>
+                    </div>
+                    <p class="footer-tagline">Veteran-led technology solutions for the future</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Technology Consulting</a></li>
+                        <li><a href="#services">Investment Analytics</a></li>
+                        <li><a href="#services">Veteran Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Sectors</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sectors">Defense Technology</a></li>
+                        <li><a href="#sectors">Venture Capital</a></li>
+                        <li><a href="#sectors">Real Estate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Semper Deep. All rights reserved.</p>
+                <p>Proudly veteran-owned and operated.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
