@@ -7,30 +7,149 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Neural Network Background -->
+    <div class="neural-network" id="neuralNetwork"></div>
+    
     <header>
         <img src="assets/v-logo.png" alt="Semper Deep Logo" class="logo">
         <nav>
-            <!-- Navigation items here -->
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#maaas">MAaaS</a>
+            <a href="newsletter.html">The Vector Report</a>
+            <a href="#faq">FAQ</a>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="hero-image">
         </section>
         
-        <section class="services">
+        <section class="services" id="services">
             <div class="service-card">
                 <img src="assets/vc-dashboard.jpg" alt="Analytics Dashboard" class="service-image">
+                <div class="service-content">
+                    <h3>Investment Analytics</h3>
+                    <p>Advanced dashboard solutions for venture capital and investment management.</p>
+                </div>
             </div>
             <div class="service-card">
                 <img src="assets/real-estate.jpg" alt="Real Estate Investment" class="service-image">
+                <div class="service-content">
+                    <h3>Real Estate Solutions</h3>
+                    <p>Comprehensive real estate investment and management platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAaaS Section -->
+        <section class="maaas-section" id="maaas">
+            <div class="container">
+                <h2 class="maaas-title">Model as a Service (MAaaS)</h2>
+                <div class="maaas-cycle">
+                    <div class="cycle-step">
+                        <div class="cycle-number">1</div>
+                        <div class="cycle-title">Discover</div>
+                        <div class="cycle-description">Identify opportunities and requirements through comprehensive analysis and strategic planning.</div>
+                    </div>
+                    <div class="cycle-step">
+                        <div class="cycle-number">2</div>
+                        <div class="cycle-title">Pilot</div>
+                        <div class="cycle-description">Test and validate solutions with controlled deployments and real-world scenarios.</div>
+                    </div>
+                    <div class="cycle-step">
+                        <div class="cycle-number">3</div>
+                        <div class="cycle-title">Deploy</div>
+                        <div class="cycle-description">Implement solutions at scale with robust infrastructure and monitoring systems.</div>
+                    </div>
+                    <div class="cycle-step">
+                        <div class="cycle-number">4</div>
+                        <div class="cycle-title">Operate/Scale</div>
+                        <div class="cycle-description">Monitor performance, optimize operations, and scale solutions for maximum impact.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">What is Semper Deep?</div>
+                        <div class="faq-answer">Semper Deep is a veteran-founded technology company specializing in AI-driven solutions for defense, investment, and real estate sectors.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How do we serve veterans?</div>
+                        <div class="faq-answer">We leverage veteran expertise and leadership to create innovative technology solutions while providing career opportunities for military veterans in the tech sector.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What makes our approach unique?</div>
+                        <div class="faq-answer">Our military background brings discipline, strategic thinking, and operational excellence to cutting-edge AI and machine learning technologies.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How do I get started?</div>
+                        <div class="faq-answer">Contact us through our MAaaS process starting with the Discovery phase to identify your specific requirements and opportunities.</div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     
     <footer>
-        <!-- Footer content here -->
+        <div class="container">
+            <p>&copy; 2024 Semper Deep. All rights reserved.</p>
+        </div>
     </footer>
+    
+    <script>
+        // Neural Network Background Animation
+        function createNeuralNetwork() {
+            const container = document.getElementById('neuralNetwork');
+            const nodeCount = 50;
+            const connectionCount = 30;
+            
+            // Create nodes
+            for (let i = 0; i < nodeCount; i++) {
+                const node = document.createElement('div');
+                node.className = 'neural-node';
+                node.style.left = Math.random() * 100 + '%';
+                node.style.top = Math.random() * 100 + '%';
+                node.style.animationDelay = Math.random() * 3 + 's';
+                container.appendChild(node);
+            }
+            
+            // Create connections
+            for (let i = 0; i < connectionCount; i++) {
+                const connection = document.createElement('div');
+                connection.className = 'neural-connection';
+                connection.style.left = Math.random() * 100 + '%';
+                connection.style.top = Math.random() * 100 + '%';
+                connection.style.width = (Math.random() * 200 + 50) + 'px';
+                connection.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+                connection.style.animationDelay = Math.random() * 4 + 's';
+                container.appendChild(connection);
+            }
+        }
+        
+        // Initialize neural network on page load
+        document.addEventListener('DOMContentLoaded', createNeuralNetwork);
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
