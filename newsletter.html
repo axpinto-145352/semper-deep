@@ -4,41 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vector Report - Semper Deep</title>
+    <meta name="description" content="Stay informed with cutting-edge insights from the intersection of military expertise and advanced technology.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Neural Network Background -->
+    <div class="neural-network" id="neuralNetwork"></div>
+    
     <header>
         <img src="assets/v-logo.png" alt="Semper Deep Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html#services">Services</a>
+            <a href="index.html#services">Solutions</a>
+            <a href="index.html#sectors">Sectors</a>
             <a href="index.html#maaas">MAaaS</a>
             <a href="#newsletter">The Vector Report</a>
-            <a href="index.html#faq">FAQ</a>
+            <a href="faq.html">FAQ</a>
         </nav>
     </header>
     
     <main class="newsletter" id="newsletter">
-        <section class="featured">
-            <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="featured-image">
-            <h1>The Vector Report</h1>
-            <h2>Latest in Defense Tech</h2>
-            <p>Stay informed with cutting-edge insights from the intersection of military expertise and advanced technology.</p>
-        </section>
-        
-        <section class="highlights">
-            <div class="highlight-item">
-                <img src="assets/vc-dashboard.jpg" alt="Investment Analytics" class="highlight-image">
-                <div class="highlight-content">
-                    <h3>Investment Analytics Spotlight</h3>
-                    <p>Advanced analytics driving smarter investment decisions in the defense technology sector.</p>
+        <section class="newsletter-hero">
+            <div class="container">
+                <img src="assets/defense-tech.jpg" alt="Defense Technology Solutions" class="featured-image">
+                <h1>The Vector Report</h1>
+                <h2>Strategic Intelligence for Modern Leaders</h2>
+                <p>Military-grade insights at the intersection of AI innovation, defense technology, and strategic business advantage. Delivered monthly to elite decision-makers.</p>
+                
+                <div class="newsletter-signup">
+                    <h3>Subscribe for Strategic Advantage</h3>
+                    <form class="signup-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required class="email-input">
+                            <select class="sector-select" required>
+                                <option value="">Select your sector</option>
+                                <option value="defense">Defense Technology</option>
+                                <option value="vc">Venture Capital</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="subscribe-btn">Join the Intelligence Network</button>
+                    </form>
+                    <p class="signup-note">Join 2,500+ strategic leaders. Unsubscribe anytime.</p>
                 </div>
             </div>
-            <div class="highlight-item">
-                <img src="assets/real-estate.jpg" alt="Real Estate Investments" class="highlight-image">
-                <div class="highlight-content">
-                    <h3>Strategic Real Estate Investments</h3>
-                    <p>How military-grade precision enhances real estate investment strategies and portfolio management.</p>
+        </section>
+        
+        <section class="newsletter-value">
+            <div class="container">
+                <h2>What You'll Receive</h2>
+                <div class="value-grid">
+                    <div class="value-item">
+                        <div class="value-icon">🎯</div>
+                        <h3>Strategic Analysis</h3>
+                        <p>Deep-dive market intelligence and trend analysis from veteran strategic analysts with proven operational experience.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🚀</div>
+                        <h3>Technology Briefings</h3>
+                        <p>First-look insights into emerging AI technologies and their tactical applications across defense, investment, and real estate sectors.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">💼</div>
+                        <h3>Case Studies</h3>
+                        <p>Detailed analysis of successful AI implementations, ROI metrics, and lessons learned from real-world deployments.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🔒</div>
+                        <h3>Security Updates</h3>
+                        <p>Critical cybersecurity developments, threat assessments, and best practices for maintaining operational security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="newsletter-archive">
+            <div class="container">
+                <h2>Recent Intelligence Reports</h2>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <img src="assets/vc-dashboard.jpg" alt="Investment Analytics" class="archive-image">
+                        <div class="archive-content">
+                            <div class="archive-date">November 2024</div>
+                            <h3>AI-Driven Due Diligence: The VC Advantage</h3>
+                            <p>How leading venture capital firms are leveraging predictive analytics to identify unicorns 18 months before competitors.</p>
+                            <a href="#" class="archive-link">Read Analysis →</a>
+                        </div>
+                    </div>
+                    <div class="archive-item">
+                        <img src="assets/defense-tech.jpg" alt="Defense Technology" class="archive-image">
+                        <div class="archive-content">
+                            <div class="archive-date">October 2024</div>
+                            <h3>Military-Grade Security in Commercial AI</h3>
+                            <p>Translating defense-sector security protocols to protect commercial AI implementations from emerging cyber threats.</p>
+                            <a href="#" class="archive-link">Read Analysis →</a>
+                        </div>
+                    </div>
+                    <div class="archive-item">
+                        <img src="assets/real-estate.jpg" alt="Real Estate Technology" class="archive-image">
+                        <div class="archive-content">
+                            <div class="archive-date">September 2024</div>
+                            <h3>Precision Property Intelligence</h3>
+                            <p>Case study: How AI-powered market analysis increased portfolio performance by 34% in 12 months.</p>
+                            <a href="#" class="archive-link">Read Analysis →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -46,8 +117,83 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 Semper Deep. All rights reserved. | The Vector Report</p>
+            <p>&copy; 2024 Semper Deep. All rights reserved. | The Vector Report - Strategic Intelligence for Elite Decision-Makers</p>
         </div>
     </footer>
+    
+    <script>
+        // Neural Network Background Animation (simplified for newsletter page)
+        function createNeuralNetwork() {
+            const container = document.getElementById('neuralNetwork');
+            const nodeCount = 35;
+            const connectionCount = 20;
+            
+            // Create nodes
+            for (let i = 0; i < nodeCount; i++) {
+                const node = document.createElement('div');
+                const isLarge = Math.random() < 0.2;
+                node.className = isLarge ? 'neural-node large' : 'neural-node';
+                node.style.left = Math.random() * 100 + '%';
+                node.style.top = Math.random() * 100 + '%';
+                node.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(node);
+            }
+            
+            // Create connections
+            for (let i = 0; i < connectionCount; i++) {
+                const connection = document.createElement('div');
+                connection.className = 'neural-connection';
+                connection.style.left = Math.random() * 100 + '%';
+                connection.style.top = Math.random() * 100 + '%';
+                connection.style.width = (Math.random() * 180 + 70) + 'px';
+                connection.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+                connection.style.animationDelay = Math.random() * 6 + 's';
+                container.appendChild(connection);
+            }
+        }
+        
+        // Initialize neural network and form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            createNeuralNetwork();
+            
+            // Newsletter signup form
+            const form = document.querySelector('.signup-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('.email-input').value;
+                const sector = this.querySelector('.sector-select').value;
+                
+                if (email && sector) {
+                    // Here you would typically send to your email service
+                    alert('Thank you for subscribing to The Vector Report! You\'ll receive strategic intelligence updates soon.');
+                    this.reset();
+                }
+            });
+            
+            // Smooth reveal animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe sections for reveal animations
+            const sections = document.querySelectorAll('.newsletter-value, .newsletter-archive');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
